@@ -1,7 +1,13 @@
+@font-face {
+    font-family: fipps;
+    src: url(../font/Fipps-Regular.otf);
+}
+
 body {
+    background: no-repeat;
     background-size: cover;
     text-align: center;
-    font-family: Terminus;
+    font-family: fipps;
 }
 
 main {
@@ -12,3 +18,4 @@ main {
 header {
     margin-top: 30px;
 }
+
