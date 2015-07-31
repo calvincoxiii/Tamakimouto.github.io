@@ -3,9 +3,21 @@
     src: url(../font/Fipps-Regular.otf);
 }
 
+h1 {
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+    font-size: 26px;
+}
+
+.sub {
+    font-size: 16px;
+}
+
 body {
     background: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     font-family: fipps;
 }
@@ -13,9 +25,78 @@ body {
 main {
     display: inline-block;
     font-size: 12px;
+    min-height: 100%;
 }
 
 header {
     margin-top: 30px;
 }
 
+.head {
+    color: green;
+    transition: color 1s ease-in-out;
+}
+
+.head:hover {
+    color: blue;
+}
+
+.links {
+    padding: 0;
+    list-style-type: none;
+}
+
+.link {
+    display: inline-block;
+    margin: 0px 0px;
+    padding: 0;
+    padding-right: 1%;
+}
+
+.link > a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.purple > a {
+    color: purple;
+}
+
+.purple > a:hover {
+    color: pink;
+}
+
+.green > a {
+    color: green;
+}
+
+.green > a:hover {
+    color: yellow;
+}
+
+.pink > a {
+    color: pink;
+}
+
+.pink > a:hover {
+    color: purple;
+}
+
+.yellow > a {
+    color: yellow;
+}
+
+.yellow > a:hover {
+    color: green;
+}
+
+.about {
+    width: 45%;
+    display: inline-block;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 12px;
+    background-color: rgba(22, 18, 18, 0.3);
+}
