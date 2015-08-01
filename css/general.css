@@ -3,6 +3,19 @@
     src: url(../font/Fipps-Regular.otf);
 }
 
+@font-face {
+    font-family: proggy;
+    src: url(../font/ProggyClean.ttf);
+}
+
+.follow {
+    background-color: rgba(22, 18, 18, 0.3);
+    position: fixed;
+    left: 2%;
+    bottom: 2%;
+    text-align: center;
+}
+
 h1 {
     padding: 0px;
     margin: 0px;
@@ -54,10 +67,17 @@ header {
     list-style-type: none;
 }
 
+.clinks {
+    padding-left: 0;
+    padding-right: 2;
+    list-style-type: none;
+    margin: 0;
+}
+
 .link {
     display: inline-block;
     margin: 0px 0px;
-    padding: 0;
+    padding: 1;
     padding-right: 1%;
 }
 
@@ -65,6 +85,25 @@ header {
     display: inline-block;
     text-decoration: none;
     transition: all 1s;
+}
+
+.clink {
+    display: inline-block;
+    margin: 3;
+    padding-left: 3;
+    padding-right: 3;
+}
+
+.clink > a {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 1s;
+    padding-left: 3;
+    padding-right: 3;
+}
+
+.clink > a:hover {
+    cursor: pointer;
 }
 
 .purple > a {
@@ -108,4 +147,10 @@ header {
     padding-right: 5%;
     font-size: 12px;
     background-color: rgba(22, 18, 18, 0.3);
+}
+
+.control {
+    font-family: proggy;
+    font-size: 16px;
+    list-style-type: none;
 }

@@ -11,8 +11,24 @@
   </head>
 
   <body>
-    <main>
 
+    <div class="follow">
+      <ul class="clinks">
+        <li class="clink green">
+          <a class="control" onclick="toggleMusic()">| Music |</a>
+        </li>
+      </ul>
+      <script type="text/javascript">
+        function toggleMusic() {
+            if (document.getElementById('bgm').paused)
+                document.getElementById('bgm').play();
+            else
+                document.getElementById('bgm').pause();
+        }
+      </script>
+    </div>
+
+    <main>
       <header>
         <h1 class="head">Anthony Zheng</h1>
         <nav>
@@ -59,7 +75,7 @@
       </section>
       <br><br><br>
 
-      <audio controls="controls" autoplay="autoplay" loop>
+      <audio id="bgm" autoplay loop>
         <source src="ost/bgm.ogg" type="audio/ogg">
         <source src="ost/bgm.mp3" type="audio/mpeg">
         Your browser doesn't support audio.
