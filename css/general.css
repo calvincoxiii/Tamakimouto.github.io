@@ -22,6 +22,10 @@ body {
     font-family: fipps;
 }
 
+.hilight {
+    color: navy;
+}
+
 main {
     display: inline-block;
     font-size: 12px;
