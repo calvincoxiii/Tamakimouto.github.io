@@ -5,32 +5,61 @@ function getTimeOfDay(){
     return hour;
 }
 
-function putBg(){
-
-    var time = getTimeOfDay();
-
-    var imgNum =
-        time < 04
-        ? "8"
-        : time < 07
-        ? "1"
-        : time < 10
-        ? "2"
-        : time < 15
-        ? "3"
-        : time < 18
-        ? "4"
-        : time < 19
-        ? "5"
-        : time < 20
-        ? "6"
-        : "7";
+function putBg(time, imgNum){
 
     var imgPath = 'img/' + imgNum + '.png';
-    //document.write(imgPath);
     $('body').css("background-image", "url(" + imgPath + ")");
 }
 
+function timeControl(){
+    var time = getTimeOfDay();
+    var imgNum;
+
+    if (time < 04){
+        imgNum = "8";
+        $('.sub').attr('data-value', "You should be sleeping right now");
+        $('.sub').attr('color', 'rgba(231, 227, 227, 1)');
+        $('.about').attr('color', 'rgba(37, 89, 101, 1');
+    } else if (time < 07) {
+        imgNum = "1";
+        $('.sub').attr('data-value', "Good Morning, Visitor");
+        $('.sub').attr('color', 'rgba(231, 227, 227, 1)');
+        $('.about').attr('color', 'rgba(231, 227, 227, 1');
+    } else if (time < 10) {
+        imgNum = "2";
+        $('.sub').attr('data-value', "You should be sleeping right now");
+        $('.sub').attr('color', 'rgba(231, 227, 227, 1)');
+        $('.about').attr('color', 'rgba(231, 227, 227, 1');
+    } else if (time < 15) {
+        imgNum = "3";
+        $('.sub').attr('data-value', "You should be sleeping right now");
+        $('.sub').attr('color', 'rgba(231, 227, 227, 1)');
+        $('.about').attr('color', 'rgba(231, 227, 227, 1');
+    } else if (time < 18) {
+        imgNum = "4";
+        $('.sub').attr('data-value', "You should be sleeping right now");
+        $('.sub').attr('color', 'rgba(231, 227, 227, 1)');
+        $('.about').attr('color', 'rgba(231, 227, 227, 1');
+    } else if (time < 19) {
+        imgNum = "5";
+        $('.sub').attr('data-value', "You should be sleeping right now");
+        $('.sub').attr('color', 'rgba(231, 227, 227, 1)');
+        $('.about').attr('color', 'rgba(231, 227, 227, 1');
+    } else if (time < 20) {
+        imgNum = "6";
+        $('.sub').attr('data-value', "You should be sleeping right now");
+        $('.sub').attr('color', 'rgba(231, 227, 227, 1)');
+        $('.about').attr('color', 'rgba(231, 227, 227, 1');
+    } else {
+        imgNum = "7";
+        $('.sub').attr('data-value', "Good Night, Visitor");
+        $('.sub').css('color', 'rgba(231, 227, 227, 1)');
+        $('.about').css('color', 'rgba(37, 89, 101, 1');
+        $('.hilight').css('color', 'rgba(231, 227, 227, 1');
+    }
+    putBg(time, imgNum);
+}
+
 $(function() {
-    putBg();
+    timeControl();
 });
