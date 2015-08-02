@@ -44,8 +44,9 @@ function timeControl(){
         $('.about').attr('color', 'rgba(231, 227, 227, 1');
     } else if (time < 19) {
         imgNum = "5";
+        $('.head').css('color', 'rgba(237, 86, 125, 1)');
         $('.sub').attr('data-value', "It's getting late isn't it, Visitor?");
-        $('.sub').attr('color', 'rgba(231, 227, 227, 1)');
+        $('.sub').css('color', 'rgba(237, 86, 125, 1)');
         $('.about').attr('color', 'rgba(231, 227, 227, 1');
     } else if (time < 20) {
         imgNum = "6";
