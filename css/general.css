@@ -54,12 +54,11 @@ header {
 }
 
 .head {
-    color: green;
     transition: color 1s ease-in-out;
 }
 
 .head:hover {
-    color: blue;
+    color: blue !important;
 }
 
 .links {
