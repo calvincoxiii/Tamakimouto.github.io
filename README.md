@@ -5,4 +5,6 @@ Nothing bad will happen if you copy code but please only do it for educational p
 
 
 # License
-This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/.  
+  
+Additional credits/permissions related material and usage licenses (mainly for fonts, arts, & etc.) will be included in the file structure.
