@@ -8,6 +8,11 @@
     src: url(../font/ProggyClean.ttf);
 }
 
+@font-face {
+    font-family: gb;
+    src: url(../font/EarlyGameboy.ttf);
+}
+
 .follow {
     background-color: rgba(22, 18, 18, 0.3);
     position: fixed;
@@ -41,6 +46,7 @@ body {
 
 .hilight {
     color: navy;
+    font-family: fipps;
 }
 
 main {
