@@ -5,13 +5,18 @@ function getTimeOfDay(){
     return hour;
 }
 
+
+
 function putBg(time, imgNum){
 
     var imgPath = 'img/' + imgNum + '.png';
     $('body').css("background-image", "url(" + imgPath + ")");
 }
 
+
+
 function timeControl(){
+
     var time = getTimeOfDay();
     var imgNum;
 
@@ -33,10 +38,13 @@ function timeControl(){
         $('.about').attr('color', 'rgba(231, 227, 227, 1');
     } else if (time < 15) {
         imgNum = "3";
+        $('.head').css('color', 'rgba(234, 129, 81, 1)');
         $('.sub').attr('data-value', "Good Day, Visitor");
         $('.sub').css('color', 'rgba(39, 72, 215, 1)');
         $('.about').css('color', 'rgba(231, 227, 227, 1');
         $('.hilight').css('color', 'rgba(23, 42, 128, 1)');
+        $('.pink > a').css('color', 'rgba(38, 165, 80, 1)');
+        $('.yellow > a').css('color', 'rgba(82, 55, 218, 1)');
     } else if (time < 18) {
         imgNum = "4";
         $('.sub').attr('data-value', "Good Afternoon, Visitor");
@@ -62,6 +70,8 @@ function timeControl(){
     }
     putBg(time, imgNum);
 }
+
+
 
 $(function() {
     timeControl();

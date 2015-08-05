@@ -126,7 +126,7 @@ header {
 }
 
 .pink > a:hover {
-    color: purple;
+    color: purple !important;
 }
 
 .yellow > a {
@@ -134,7 +134,7 @@ header {
 }
 
 .yellow > a:hover {
-    color: green;
+    color: green !important;
 }
 
 .about {
