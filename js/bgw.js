@@ -22,6 +22,7 @@ function timeControl(){
 
     if (time < 04){
         imgNum = "8";
+        $('.head').css('color', 'rgba(231, 227, 227, 1)');
         $('.sub').attr('data-value', "You should be sleeping right now");
         $('.sub').css('color', 'rgba(231, 227, 227, 1)');
         $('.about').css('color', 'rgba(37, 89, 101, 1');
