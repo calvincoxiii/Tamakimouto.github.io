@@ -36,12 +36,18 @@ h1 {
     content: attr(data-value);
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
     font-family: fipps;
+    position: fixed;
+    height: 100%;
 }
 
 .hilight {
@@ -144,6 +150,20 @@ header {
 }
 
 .about {
+    width: 45%;
+    display: inline-block;
+    color: white;
+    text-align: left;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 12px;
+    background-color: rgba(22, 18, 18, 0.3);
+    height: 45vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.contact {
     width: 45%;
     display: inline-block;
     color: white;
