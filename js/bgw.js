@@ -76,4 +76,20 @@ function timeControl(){
 
 $(function() {
     timeControl();
+
+    $('#cpage').on('click', function() {
+        if($('#cpage').html() == "contact")
+            $('#cpage').html("home");
+        else
+            $('#cpage').html("contact");
+
+        $('section').each(function() {
+            if($(this).hasClass('visible')) {
+                $(this).removeClass('visible');
+            } else {
+                $(this).addClass('visible');
+            }
+        });
+    });
+
 });
