@@ -59,9 +59,12 @@ function timeControl(){
         $('.about').attr('color', 'rgba(231, 227, 227, 1');
     } else if (time < 20) {
         imgNum = "6";
+        $('.head').css('color', 'rgba(240, 84, 89, 1)');
         $('.sub').attr('data-value', "Good Evening, Visitor");
-        $('.sub').attr('color', 'rgba(231, 227, 227, 1)');
-        $('.about').attr('color', 'rgba(231, 227, 227, 1');
+        $('.sub').css('color', 'rgba(231, 227, 227, 1)');
+        $('li.purple > a').css('color', 'rgba(228, 192, 111, 1)');
+        $('.hilight').css('color', 'rgba(240, 84, 125, 1)');
+        $('.about').css('color', 'rgba(210, 114, 233, 1');
     } else {
         imgNum = "7";
         $('.sub').attr('data-value', "Good Night, Visitor");

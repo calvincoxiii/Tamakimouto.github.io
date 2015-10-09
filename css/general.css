@@ -98,6 +98,10 @@ header {
     transition: all 1s;
 }
 
+#cpage:hover {
+    cursor: pointer;
+}
+
 .clink {
     display: inline-block;
     margin: 0;
