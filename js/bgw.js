@@ -1,3 +1,8 @@
+/**
+* getTimeOfDay
+*
+* @return hour The current hour in 24 hour format
+*/
 function getTimeOfDay(){
 
     var now = new Date();
@@ -6,7 +11,14 @@ function getTimeOfDay(){
 }
 
 
-
+/**
+* putBg
+*
+* Changes the website background
+*
+* @param time The current hour
+* @param imgNum The pictur to use as the backdrop
+*/
 function putBg(time, imgNum){
 
     var imgPath = 'img/' + imgNum + '.png';
@@ -14,7 +26,12 @@ function putBg(time, imgNum){
 }
 
 
-
+/**
+* timeControl
+*
+* The main controller for the look of the site
+* based on time of day.
+*/
 function timeControl(){
 
     var time = getTimeOfDay();
@@ -67,6 +84,7 @@ function timeControl(){
         $('.about').css('color', 'rgba(210, 114, 233, 1');
     } else {
         imgNum = "7";
+        $('.head').css('color', 'rgba(231, 227, 227, 1)');
         $('.sub').attr('data-value', "Good Night, Visitor");
         $('.sub').css('color', 'rgba(231, 227, 227, 1)');
         $('.about').css('color', 'rgba(37, 89, 101, 1');
@@ -76,10 +94,13 @@ function timeControl(){
 }
 
 
-
+/**
+* Document Ready
+*/
 $(function() {
     timeControl();
 
+    /* Onclick Dynamic Page Change */
     $('#cpage').on('click', function() {
         if($('#cpage').html() == "contact")
             $('#cpage').html("home");
@@ -88,11 +109,13 @@ $(function() {
 
         $('section').each(function() {
             if($(this).hasClass('visible')) {
+                $(this).fadeOut(500);
                 $(this).removeClass('visible');
             } else {
                 $(this).addClass('visible');
+                $(this).fadeIn(500);
             }
         });
-    });
+    }); // Page Change
 
 });
